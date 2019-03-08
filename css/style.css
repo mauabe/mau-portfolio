@@ -46,3 +46,41 @@ body {
 .h-50 {
   height: 50px;
 }
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 10000;
+}
+
+#status, .preloader {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+#status {
+  width: 100px;
+  height: 100px;
+  margin: -50px 0 0 -50px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.preloader {
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.preloader:before {
+  content: "";
+  display: block;
+  
+}
