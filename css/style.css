@@ -7,13 +7,13 @@ font-family: 'Open Sans', sans-serif;
 */
 
 h1 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 80px;
   line-height: 70px;
 }
 
 h4 {
-  font-family: "Lato", san-serif;
+  font-family: 'Lato', sans-serif;
   text-transform: capitalize;
   letter-spacing: 2px;
   position: relative;
@@ -55,14 +55,14 @@ body {
   right: 0;
   bottom: 0;
   background-color: #fff;
-  z-index: 10000;
+  z-index: 10000
 }
 
 #status,
 .preloader {
   top: 50%;
   left: 50%;
-  position: absolute;
+  position: absolute
 }
 
 #status {
@@ -70,14 +70,14 @@ body {
   height: 100px;
   background-repeat: no-repeat;
   background-position: center;
-  margin: -50px 0 0 -50px;
+  margin: -50px 0 0 -50px
 }
 
 .preloader {
-  width: 40px;
   height: 40px;
+  width: 40px;
   margin-top: -20px;
-  margin-left: -20px;
+  margin-left: -20px
 }
 
 .preloader:before {
@@ -90,12 +90,12 @@ body {
   width: 100%;
   -webkit-animation: rotation 1s linear infinite;
   animation: rotation 1s linear infinite;
-  border: 2px solit #009cc8;
+  border: 2px solid #009cc8;
   border-top: 2px solid transparent;
-  border-radius: 100%;
+  border-radius: 100%
 }
 
-.preloader > .icon {
+.preloader>.icon {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -104,81 +104,84 @@ body {
   margin-top: -12.5px;
   margin-left: -5.3px;
   -webkit-animation: wink 1s ease-in-out infinite alternate;
-  animation: wink 1s ease-in-out infininte alternate;
+  animation: wink 1s ease-in-out infinite alternate
 }
 
-@media only screen and (min-width: 768px) {
+
+
+
+@media only screen and (min-width:768px) {
   .preloader {
-    height: 60px;
-    width: 60px;
-    margin-top: -30px;
-    margin-left: -30px;
+      height: 60px;
+      width: 60px;
+      margin-top: -30px;
+      margin-left: -30px
   }
   .preloader:before {
-    left: -2px;
-    top: -2px;
-    border-width: 2px;
+      left: -2px;
+      top: -2px;
+      border-width: 2px
   }
-  .preloader > .icon {
-    height: 37.5px;
-    width: 15.9px;
-    margin-top: -18.75px;
-    margin-left: -7.95px;
+  .preloader>.icon {
+      height: 37.5px;
+      width: 15.9px;
+      margin-top: -18.75px;
+      margin-left: -7.95px
   }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width:1200px) {
   .preloader {
-    height: 60px;
-    width: 60px;
-    margin-top: -30px;
-    margin-left: -30px;
+      height: 60px;
+      width: 60px;
+      margin-top: -30px;
+      margin-left: -30px
   }
-  .preloader > .icon {
-    height: 50px;
-    width: 21.2px;
-    margin-top: -25px;
-    margin-left: -10.6px;
+  .preloader>.icon {
+      height: 50px;
+      width: 21.2px;
+      margin-top: -25px;
+      margin-left: -10.6px
   }
 }
 
 @-webkit-keyframes rotation {
   from {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
+      -webkit-transform: rotate(0);
+      transform: rotate(0)
   }
   to {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg)
   }
 }
 
 @keyframes rotation {
   from {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
+      -webkit-transform: rotate(0);
+      transform: rotate(0)
   }
   to {
-    -webkit-transform: rotate(359deg);
-    transform: rotate(359deg);
+      -webkit-transform: rotate(359deg);
+      transform: rotate(359deg)
   }
 }
 
 @-webkit-keyframes wink {
   from {
-    opacity: 0;
+      opacity: 0
   }
   to {
-    opacity: 1;
+      opacity: 1
   }
 }
 
 @keyframes wink {
   from {
-    opacity: 0;
+      opacity: 0
   }
   to {
-    opacity: 1;
+      opacity: 1
   }
 }
 
@@ -197,4 +200,73 @@ nav ul {
   margin-bottom: 0;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+
+nav li {
+  display: inline-block;
+  margin: 10px;
+}
+
+nav li a {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #444;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.bg-nav {
+  background: #fff;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.bg-nav ul {
+  padding: 10px;
+}
+a:focus {
+  color: #444;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #009cc8;
+  text-decoration: none;
+}
+
+a.active {
+  color: #009cc8;
+}
+
+#home {
+  background: url(../img/home-bg-2.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.display-table {
+  display: table;
+  height: 100vh;
+}
+
+about {
+  padding: 100px 0;
+}
+
+.about-img-div img {
+  margin: 0 auto;
+}
+
+.about-border {
+  position: absolute;
+  border: 10px solid #009cc8;
+  width: 400px;
+  height: 400px;
+  top: 40px;
+  left: 50px;
+  z-index: 1;
 }
