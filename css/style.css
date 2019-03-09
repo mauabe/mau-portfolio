@@ -14,7 +14,7 @@ h1 {
 
 h4 {
   font-family: "Lato", san-serif;
-  text-transform: Capitalize;
+  text-transform: capitalize;
   letter-spacing: 2px;
   position: relative;
   color: #009cc8;
@@ -43,6 +43,7 @@ body {
   font-size: 50px;
   line-height: 50px;
 }
+
 .h-50 {
   height: 50px;
 }
@@ -57,19 +58,19 @@ body {
   z-index: 10000;
 }
 
-#status, .preloader {
-  width: 40px;
-  height: 40px;
-  margin-top: -20px;
-  margin-left: -20px;
+#status,
+.preloader {
+  top: 50%;
+  left: 50%;
+  position: absolute;
 }
 
 #status {
   width: 100px;
   height: 100px;
-  margin: -50px 0 0 -50px;
   background-repeat: no-repeat;
   background-position: center;
+  margin: -50px 0 0 -50px;
 }
 
 .preloader {
@@ -82,5 +83,118 @@ body {
 .preloader:before {
   content: "";
   display: block;
-  
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  height: 100%;
+  width: 100%;
+  -webkit-animation: rotation 1s linear infinite;
+  animation: rotation 1s linear infinite;
+  border: 2px solit #009cc8;
+  border-top: 2px solid transparent;
+  border-radius: 100%;
+}
+
+.preloader > .icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 25px;
+  width: 10.6px;
+  margin-top: -12.5px;
+  margin-left: -5.3px;
+  -webkit-animation: wink 1s ease-in-out infinite alternate;
+  animation: wink 1s ease-in-out infininte alternate;
+}
+
+@media only screen and (min-width: 768px) {
+  .preloader {
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .preloader:before {
+    left: -2px;
+    top: -2px;
+    border-width: 2px;
+  }
+  .preloader > .icon {
+    height: 37.5px;
+    width: 15.9px;
+    margin-top: -18.75px;
+    margin-left: -7.95px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .preloader {
+    height: 60px;
+    width: 60px;
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  .preloader > .icon {
+    height: 50px;
+    width: 21.2px;
+    margin-top: -25px;
+    margin-left: -10.6px;
+  }
+}
+
+@-webkit-keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes rotation {
+  from {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@-webkit-keyframes wink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes wink {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+header {
+  text-align: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  height: 65px;
+}
+
+nav ul {
+  display: inline-block;
+  padding-left: 0;
+  list-style: none;
+  padding: 20px;
+  margin-bottom: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
