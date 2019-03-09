@@ -20,10 +20,10 @@
   </head>
   <body>
 
-<!-- SECTION: PRELOADER -->
+<!-- SECTION: PRELOADER 
   <div id="preloader">
-    <div class="status" id="status">
-      <div class="preloader" aria0busy=true aria-label="loading" role='progressbar'>
+    <div id="status">
+      <div class="preloader" aria-busy='true' aria-label="loading" role='progressbar'>
       </div>
     </div>
   </div>
@@ -34,8 +34,9 @@
   <nav class="">
     <ul>
       <li><a href='#hello'>Hello</a></li>
-      <li><a href='#projects'>Projects</a></li>
       <li><a href='#experience'>Experience</a></li>
+      <li><a href='#projects'>Projects</a></li>
+      <li><a href='#musings'>Musings</a></li>
       <li><a href='#contact'>Contact</a></li>
     </ul>
   </nav>
@@ -156,7 +157,7 @@
   <div class="container">
     <div class="col-md-12">
       <h4>projects</h4>
-      <h1 class="size-50">Our <br /> Projects</h1>
+      <h1 class="size-50">Featured <br /> Projects</h1>
     </div>
     <!-- MAIN CONTAINER -->
     <div class="main-container portfolio inner clearfix">
@@ -288,12 +289,38 @@
     <div class="col-md-4" data-aos='fade-up'>
 
       <h3>Phone Number</h3>
+      <ion-icon name="cube"></ion-icon>
       <p>310-321-9000</p>
-      <h3>Mobile</h3>
+      <h3>Github</h3>
+        <ion-icon name="logo-octocat"></ion-icon>
+        <p>github.com/mauabe</p>
+      <h3>Linkedin</h3>
+        <ion-icon name="logo-octocat"></ion-icon>
+        <p>linkedin.com/in/mauabe</p>
+      <h3>Web</h3>
+      <ion-icon name="cube"></ion-icon>
+      <p>spepy.io</p>
+      <div class="clearfix"></div>
+      <div class="h-50"></div>
+    </div>
+    <div class="col-md-8"data-aos='fade-up'>
+      <form action="" class="contact-bg" id="contact-form" name='contact' method='post' novalidate='novalidate'>
+        <input type="text" name="name" id="" class="form-control" placeholder='name' />
+        <input type="email" name="email" id="" class="form-control" placeholder='email' />
+        <input type="text" name="phone" id="" class="form-control" placehlder='310-321-9000'>
+        <textarea name='message' class="form-control" placeholder='your message' style='height:120px'></textarea>
+        <button id='submit' type="submit" class="btn btn-glance">Send</button>
+        <div id="success">
+          <p class="green textcenter">Your message was sent successfully.</p>
+        </div>
+        <div id="error">Somethign went wrong. Try refreshing and sending your message again
+        </div>
+      </form>
     </div>
   </div>
 </section>
 <!--  !SECTION: CONTACT -->
+
 
 <!-- SCRIPTS -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
