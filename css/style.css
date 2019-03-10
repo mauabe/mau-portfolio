@@ -252,6 +252,7 @@ a.active {
   display: table;
   height: 100vh;
 }
+/* ABOUT */
 
 about {
   padding: 100px 0;
@@ -270,3 +271,5 @@ about {
   left: 50px;
   z-index: 1;
 }
+
+/* EXPERIENCE */
