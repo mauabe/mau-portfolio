@@ -1,10 +1,10 @@
 <?php
 
-    $to = "mr3essa@gmail.com";
+    $to = "336fo501@spepy.io.com";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $headers = "From: $from";
-    $subject = "You have a message.";
+    $subject = "Message from the web form-01.";
 
     $fields = array();
     $fields{"name"} = "name";
@@ -14,7 +14,7 @@
 
     
 
-    $body = "Here is what was sent:\r\n"; 
+    $body = "This is the message, man:\r\n"; 
 
     foreach($fields as $a => $b){$body .= $b." : ".$_REQUEST[$a]."\r\n"; }
 
