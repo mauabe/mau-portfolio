@@ -206,7 +206,7 @@ nav li {
 
 nav li a {
   text-transform: uppercase;
-  letter-spacing: 8px;
+  letter-spacing: 6px;
   color: #009cc8;
   font-size: 11px;
   font-weight: bold;
@@ -254,6 +254,7 @@ a.active {
 .dev-design {
   color: #bbb;
 }
+
 /* ABOUT */
 
 #about {
@@ -445,7 +446,6 @@ a.active {
   display: block;
   margin-bottom: 30px;
   background-color: #bbb;
-
 }
 
 .portfolio_item .portfolio_item_hover {
@@ -546,6 +546,7 @@ a.active {
   padding-top: 55px;
 }
 
+/*  MODAL  */
 .modal-content {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
   border: none;
@@ -579,6 +580,7 @@ a.active {
   font-size: 40px;
   line-height: 50px;
 }
+
 /* MUSINGS */
 
 #musing {
@@ -589,7 +591,6 @@ a.active {
 #projects {
   padding: 100px 0;
 }
-
 
 /* CONTACT */
 
