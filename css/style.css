@@ -435,7 +435,7 @@ a.active {
 
 .portfolio .categories-grid .categories ul li a.active {
   background-color: #009cc8;
-  padding: 0px 20px;
+  padding: 0px 40px;
   color: white;
   text-decoration: none;
 }
