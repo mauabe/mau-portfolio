@@ -234,7 +234,7 @@ a.active {
   color: #009cc8;
 }
 
-#hello {
+#home {
   background: url(../img/home-bg-2.jpg);
   background-size: cover;
   height: 100vh;
@@ -257,12 +257,16 @@ a.active {
 
 /* ABOUT */
 
+#hello {
+  background: #fff
+}
+
 #about {
-  padding: 100px 0 100px 0;
+  padding: 200px 0 200px 0;
 }
 
 .about-img-div img {
-  margin: 0 auto;
+  margin: 100 auto 100 auto;
 }
 
 .about-border {
@@ -588,10 +592,6 @@ a.active {
   background: #f3f3f3;
 }
 
-#projects {
-  padding: 100px 0;
-}
-
 /* CONTACT */
 
 #contact {
@@ -737,7 +737,7 @@ fieldset {
     font-size: 50px;
     line-height: 50px;
   }
-  #hello,
+  #home,
   .display-table {
     height: 600px;
   }
