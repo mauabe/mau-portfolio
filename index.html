@@ -37,12 +37,12 @@
   <body>
 
   <!-- SECTION: PRELOADER  -->
-  <!-- <div id="preloader">
-    <div id="status">
-      <div class="preloader" aria-busy='true' aria-label="loading" role='progressbar'>
+    <div id="preloader">
+      <div id="status">
+        <div class="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar">
+        </div>
       </div>
     </div>
-  </div> -->
   <!-- !SECTION: PRELOADER -->
 
 
@@ -87,10 +87,10 @@
         <h1 class="size-50">Nice to <br /> meet you</h1>
         <div class="h-50"></div>
         <p>
-          I am the cog that makes the machine, and the machine that makes cogs. I like to see things working.
+          I write code everyday. I am a maker. I like to see things working.
         </p>
         <p>
-          I run my own design and development studio from dusk to dawn, producing websites and designs from conception to completion. I love the completion. I learned to work on many platforms, many technologies, many budgets. To stay in business, you wear many hats, and no shoes are to big or too small. You dance according to the music, and persevere.
+          I run my own web development and designn studio from dusk to dawn, producing websites and designs from concept to completion. I love the completion. I learned to work on many platforms, many technologies, many budgets. To stay in business, you wear many hats, and no shoes are to big or too small. You dance according to the music, and persevere.
         </p>
         <p>
           To learn more about me, you can read my mind on  
@@ -132,7 +132,7 @@
                 <p class="timeline-event-thumbnail"> 2010-Present</p>
                 <h3>Developer & Designer</h3>
                 <h4>Spepy Design Inc.</h4>
-                  <br> Running a web development and design studio from dawn to dusk. Clients: UCLA Electrical Engineering, Jain Irrigation, Mount Saint Mary’s University, The Wall Street Journal, etc. Recent Projects: moderntimesdigitalmedia.com,
+                  <br> Running a web development and design studio. Clients: UCLA Electrical and Computer Engineering, Jain Irrigation, Mount Saint Mary’s University, The Wall Street Journal, etc. Recent Projects: moderntimesdigitalmedia.com,
                   cleoschneider.com, joefearless.com, truluckmusic.com.
               </div>
             </li>
@@ -202,9 +202,8 @@
               <nav class="categories">
                 <ul class="portfolio_filter">
                     <!-- <li><a href="" class="active" data-filter="*">All</a></li> -->
-                    <!-- <li><a href="" data-filter=".dev">Developer Tools</a></li> -->
-                    <li><a href="" class="active" data-filter=".web">Web</a></li>
-                    <li><a href="" data-filter=".graphic">Graphic Design</a></li>
+                    <li><a href="" class="active" data-filter=".web">Developer</a></li>
+                    <li><a href="" data-filter=".graphic">Designer</a></li>
                 </ul>
               </nav>
             </div>
@@ -304,6 +303,17 @@
               </div>
               <!-- end PROJ 06 -->
 
+    <!-- single work -->
+    <div class="col-md-4 col-sm-6 ads graphic">
+        <a id="test02" href="#animatedModalTest" class="portfolio_item"> <img src="img/standback.jpg" alt="image" class="img-responsive" />
+            <div class="portfolio_item_hover">
+                <div class="portfolio-border clearfix">
+                    <div class="item_info"> <span>Testing in React</span> <em>Testing Project</em> </div>
+                </div>
+            </div>
+        </a>
+    </div>
+    <!-- end single work -->
 
               <!-- PROJ 07 -->
               <div class="col-md-4 col-sm-6 graphic">
@@ -640,10 +650,35 @@
     </div>
     <!-- !MODAL -->
 
+ <!--TESTING MODAL-->
+ <div id="animatedModalTest" class="popup-modal">
+    <!--THIS IS IMPORTANT! to close the modal, the class name has to match the name given on the ID -->
+    <div id="btn-close-modal" class="close-animatedModal close-popup-modal"> <i class="ion-close-round"></i> </div>
+    <div class="clearfix"></div>
+    <div class="modal-content">
+      <div class="container">
+        <div class="portfolio-padding">
+          <div class="col-md-8 col-md-offset-2">
+              <h2>React Testing<br /> Jest or Chai, that is the question</h2>
+              <div class="h-50"></div>
+              <p>.</p>
+              <br />
+              <br /> <img src="img/standback.jpg" alt="" class="img-responsive" />
+              <br />
+              <br />
+              <p>.</p>
+              <p>.</p>
+              <br />
+              <br /> </div>
+        </div>
+      </div>
+    </div>
+</div>
+
   <!-- SCRIPTS -->
   <!-- <script> AOS.init(); </script> -->
   <script src="js/jquery.js"></script>
-
+  <!--  plugins  -->
   <script src="js/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/aos.js"></script>

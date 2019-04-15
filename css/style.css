@@ -435,7 +435,7 @@ a.active {
 
 .portfolio .categories-grid .categories ul li a.active {
   background-color: #009cc8;
-  padding: 0px 40px;
+  padding: 0px 20px;
   color: white;
   text-decoration: none;
 }
@@ -449,7 +449,7 @@ a.active {
   overflow: hidden;
   display: block;
   margin-bottom: 30px;
-  background-color: #bbb;
+  /* background-color: #bbb; */
 }
 
 .portfolio_item .portfolio_item_hover {
@@ -551,6 +551,7 @@ a.active {
 }
 
 /*  MODAL  */
+
 .modal-content {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0);
   border: none;
@@ -566,10 +567,10 @@ a.active {
   font-size: 22px;
   opacity: 0;
   cursor: pointer;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  -webkit-transition-delay: 0.6s;
-  transition-delay: 0.6s;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  -webkit-transition-delay: .6s;
+  transition-delay: .6s;
   position: fixed;
   z-index: 100000;
   right: 14px;
@@ -580,7 +581,7 @@ a.active {
 }
 
 .modal-content h2 {
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', serif;
   font-size: 40px;
   line-height: 50px;
 }
