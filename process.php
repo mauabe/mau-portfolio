@@ -1,6 +1,6 @@
 <?php
 
-    $to = "336fo501@spepy.io.com";
+    $to = "336f0501@spepy.io";
     $from = $_REQUEST['email'];
     $name = $_REQUEST['name'];
     $headers = "From: $from";

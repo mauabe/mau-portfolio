@@ -1,8 +1,8 @@
 # mau-portfolio
 
-Hello there, you shouldn't be here. These are the source code used to create my web development portfolio website. 
+Hello there, you shouldn't be here. This is the source code for my web development portfolio website. 
 
-Move along to [spepy.io][website] and check it out. It is visually mode interesting.
+Move along to [spepy.io][website] and check it out. It is much mode interesting.
 
 www.spepy.io
 
